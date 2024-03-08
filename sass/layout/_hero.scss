@@ -1,0 +1,32 @@
+.section-hero{
+    background-color: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: url("../images/Img\ \(12\).png");
+
+&-title{
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: $main-white-color;
+    max-width: 696px;
+    margin: 0 auto;
+    }
+    &-btn{
+        width: 216px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: $accent-color;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: $main-white-color;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    }
+}

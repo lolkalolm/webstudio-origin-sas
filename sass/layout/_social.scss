@@ -1,0 +1,31 @@
+.social-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 28px;
+
+&-link{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color:rgba(175, 177, 184, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+&-icon{
+    fill: currentColor;
+}
+&-link:hover{
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+.footer-social-list{
+    display: flex;
+    gap: 10px;
+}
+}
+.contacts-list-icon{
+    fill:currentColor;
+}

@@ -1,0 +1,37 @@
+.clients{
+    padding-top: 94px;
+    padding-bottom: 94px;
+&-title{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+    }
+    &-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    &-list-item{
+        width: calc((100% - 150px)/ 6);
+    }
+    &-list-link{
+        height: 92px;
+        border:1px solid rgba(175, 177, 184, 1);
+        border-radius:4px ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(175, 177, 184, 1);
+    }
+    &-list-icon{
+        fill: currentColor;
+    }
+    &-list-link:hover{
+        color: #2196F3;
+        border-color: rgba(33, 150, 243, 1);
+    }
+}

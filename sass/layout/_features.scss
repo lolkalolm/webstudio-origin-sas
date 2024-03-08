@@ -1,0 +1,49 @@
+.features{
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+&-list{
+    display: flex;
+    gap: 30px;
+}
+&-list-desc{
+    color: $second-color-text;
+font-weight: 400;
+line-height: 1.7;
+letter-spacing: 0.03em;
+}
+&-list-title{
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+ }
+}
+ .antena::before{
+    background-image: url("../antena.png");
+    content: "";
+    width:270px;
+    height: 120px;
+    display: inline-block;
+}
+.clock::before{
+    background-image: url("../clock.png");
+    content: "";
+    width:270px;
+    height: 120px;
+    display: inline-block;
+}
+.desk::before{
+    background-image: url("../desk.png");
+    content: "";
+    width:270px;
+    height: 120px;
+    display: inline-block;
+}
+.astro::before{
+    background-image: url("../astro.png");
+    content: "";
+    width:270px;
+    height: 120px;
+    display: inline-block;
+}

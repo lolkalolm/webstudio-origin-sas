@@ -1,0 +1,50 @@
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $footer-bgcolor;
+&-logo{
+    color: $main-white-color;
+   }
+   &-list-link{
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: $adres-contact-link;
+    }
+    &-content-wrap{
+        display: flex;
+        gap: 70px;
+    }
+    &-social-title{
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 1);
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        }
+        &-list-link:hover{
+            background-color: #2196F3;
+            color: #FFFFFF;
+        }
+        &-list-link{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            color:rgba(255, 255, 255, 1);
+           background-color: rgba(255, 255, 255, 0.1);
+        }
+        &-list-icon{
+            fill: currentColor;
+        }
+    }
+        .address{
+            margin-top: 20px;
+        }
+        .location-link{
+            color: main-white-color;
+        }
+        
