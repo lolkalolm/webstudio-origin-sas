@@ -1,9 +1,5 @@
 .header{
-    position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
     &-logo{
         color: $header-logo-color;
     }
@@ -33,15 +29,17 @@ color: $accent-color;}
     display: flex;
     align-items: center;
     gap: 10px;
-    }
-    &-link:hover,.nav-list-link:hover{
+    &:hover{
         color: $accent-color;
+    }
     }
 }
     .nav-list{
         display: flex;
         gap: 50px;
-    
+        &-link:hover {
+            color: $accent-color;
+        }
     
     &-item{
         padding-top: 32px;

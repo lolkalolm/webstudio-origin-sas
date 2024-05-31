@@ -27,6 +27,7 @@
     letter-spacing: 0.03em;
     text-align: center;
     color: rgba(33, 33, 33, 1);
+    margin-bottom: 12px;
     }
     .modal-form{
         font-size: 12px;
@@ -46,6 +47,7 @@
             padding-left: 42px;
             border: none;
             border: 1px solid rgba(33, 33, 33, 0.2);
+            margin-bottom: 10px;
             
         }
         .input-phone{
@@ -55,6 +57,7 @@
             padding-left: 42px;
             border: none;
             border: 1px solid rgba(33, 33, 33, 0.2);
+            margin-bottom: 10px;
         }
         .input-mail{
             height: 40px;
@@ -63,6 +66,7 @@
             padding-left: 42px;
             border: none;
             border: 1px solid rgba(33, 33, 33, 0.2);
+            margin-bottom: 10px;
         }
         .textarea-comment{
             resize: none;
@@ -71,6 +75,7 @@
             border-radius: 4px;
             border: none;
             border: 1px solid rgba(33, 33, 33, 0.2);
+            margin-bottom: 20px;
         }
         .modal-form-btn{
             display: block;

@@ -1,10 +1,14 @@
 .section-hero{
     background-color: #2F303A;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding: 118px 0;
     background-image: url("../images/Img\ \(12\).png");
-
+    @include desc(1199px){
+        padding-top: 200px;
+    padding-bottom: 200px;
+    }
 &-title{
+    @include desc(1199px)
+    {
     font-size: 44px;
     font-weight: 900;
     line-height: 60px;
@@ -13,7 +17,7 @@
     color: $main-white-color;
     max-width: 696px;
     margin: 0 auto;
-    }
+    }}
     &-btn{
         width: 216px;
     height: 50px;
