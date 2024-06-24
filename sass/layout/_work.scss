@@ -1,6 +1,9 @@
 .work{
-    padding-bottom: 94px;
-
+    display: none;
+    @include desc(1200px) {
+        padding-bottom: 94px;
+        display: block;
+    }
 &-list{
     display: flex;
     gap: 30px;

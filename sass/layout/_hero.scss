@@ -7,17 +7,20 @@
     padding-bottom: 200px;
     }
 &-title{
-    @include desc(1199px)
-    {
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 60px;
-    letter-spacing: 0.06em;
-    text-align: center;
     color: $main-white-color;
-    max-width: 696px;
-    margin: 0 auto;
-    }}
+        font-weight: 900;
+        line-height: 1.4;
+        letter-spacing: 0.06em;
+        text-align: center;
+        font-size: 26px;
+        max-width: 360px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        @include desc(1200px) {
+            font-size: 44px;
+            max-width: 696px;
+        }
+    }
     &-btn{
         width: 216px;
     height: 50px;

@@ -1,13 +1,32 @@
 .footer{
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: $footer-bgcolor;
+    padding: 60px 0;
+    background-color: $footer-bgcolor ;
+    text-align: center;
+
+    @include desc(1200px) {
+        text-align: start;
+    }
 &-logo{
-    color: $main-white-color;
+        font-family: "Raleway";
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-align: left;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 145px;
+        color: $main-white-color ;
+
+        @include desc(1200px) {
+            margin: 0;
+            margin-bottom: 20px;
+        }
    }
    &-social-list{
         display: flex;
         gap: 10px;
+        justify-content: center;
     }
    &-list-link{
     font-weight: 400;
@@ -17,7 +36,13 @@
     }
     &-content-wrap{
         display: flex;
-        gap: 70px;
+        flex-direction: column;
+        gap: 60px;
+
+        @include desc(1200px) {
+            flex-direction: row;
+            justify-content: space-around;
+        }
     }
     &-social-title{
         font-weight: 700;
@@ -69,3 +94,50 @@
             fill: currentColor;
             
         }
+        .addmail-form{display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+    
+            @include desc(1200px) {
+                gap: 12px;
+                flex-direction: row;
+            }}
+            .addmail-input{
+                width: 100%;
+                background-color: transparent;
+                border-radius: 4px;
+                border: 1px solid rgba(255, 255, 255, 0.30);
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+                padding: 15px 16px;
+                color: rgba(255, 255, 255, 0.60);
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0.48px;
+    
+                @include mob(480px) {
+                    width: 450px;
+                }
+    
+                @include desc(1200px) {
+                    width: 358px;
+                }   
+            }
+            .help {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 60px;
+            
+                @include tab(768px) {
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: baseline;
+                }
+            
+                @include desc(1200px) {
+                    gap: 70px;
+                }
+            }
