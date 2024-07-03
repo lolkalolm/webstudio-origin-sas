@@ -1,6 +1,11 @@
 .portfolio{
     padding-top: 94px;
     padding-bottom: 94px;
+    
+    @include desc(1200px) {
+        padding-top: 86px;
+        padding-bottom: 102px;
+    }
 
 &-list-title{
     color: black;
