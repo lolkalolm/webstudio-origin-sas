@@ -36,6 +36,7 @@ letter-spacing: 0.03em;
         flex-wrap: wrap;
         @include tab(768px) {
             flex-direction: row;
+            justify-content: center;
 }
     &-list-kontent-wrap{
         margin-top: 30px;

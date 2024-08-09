@@ -31,13 +31,42 @@ color: $accent-color;}
         flex-direction: column;
         gap: 10px;
         margin-left: auto;
+        
     }
 
     @include desc(1200px) {
         flex-direction: row;
         gap: 50px;
     }
-    &__link {
+}
+    .nav-list{
+        display: none;
+    @include tab(768px) {
+        display: flex;
+        gap:51px ;
+        
+    }
+    
+    &-item{
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    &-link-current::after{
+        position: absolute;
+        content:"";
+        border-radius: 2px;
+        height: 4px;
+        background-color: rgba(33, 150, 243, 1);
+        width: 100%;
+        top:45px ;
+        left: 0;
+        }
+        &-link{
+            position: relative;
+        }
+    }
+    
+    .contacts-list-link {
         display: flex;
         align-items: center;
         gap: 10px;
@@ -59,29 +88,4 @@ color: $accent-color;}
             color: $blue-color;
         }
     
-    }
-}
-    .nav-list{
-        display: none;
-    @include tab(768px) {
-        display: block;
-    }
-    
-    &-item{
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
-    &-link-current::after{
-        position: absolute;
-        content:"";
-        border-radius: 2px;
-        height: 4px;
-        background-color: rgba(33, 150, 243, 1);
-        width: 100%;
-        top:45px ;
-        left: 0;
-        }
-        &-link{
-            position: relative;
-        }
     }

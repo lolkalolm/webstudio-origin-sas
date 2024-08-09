@@ -1,12 +1,10 @@
 .portfolio{
-    padding-top: 94px;
-    padding-bottom: 94px;
-    
+    padding: 60px 0;
+
     @include desc(1200px) {
         padding-top: 86px;
         padding-bottom: 102px;
     }
-
 &-list-title{
     color: black;
     font-family: Roboto;
@@ -27,10 +25,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    @include tab(768px) {
+        display:-webkit-box;
+        flex-direction: row;
+    }
 }
-&-list-item{
-    
- }
  &-list-wrap{
     padding-top:20px ;
     padding-bottom:20px ;
@@ -65,11 +64,22 @@
     }
         .filters-list{
             display: flex;
-            justify-content: center;
-            gap: 8px;
-            margin-bottom: 50px;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+
+    @include tab(768px) {
+        justify-content: center;
+    }
             &-btn:hover{
                 background-color: $accent-color;
-                color: white;
+                color: rgba(205, 241, 236, 0.973);
+            }
+        }
+        .portfolio-list-item{
+            flex-basis: calc((100% - 30px) / 2);
+            @include desc(1200px) {
+                flex-basis: calc((100% - 60px) / 3);
             }
         }
