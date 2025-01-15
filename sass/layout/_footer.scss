@@ -35,12 +35,16 @@
     color: $adres-contact-link;
     }
     &-content-wrap{
-        display: flex;
-        flex-direction: column;
-        gap: 60px;
+        @include tab(768px) {
+            display: flex;  
+            flex-wrap: wrap;
+            column-gap:  165px; 
+            row-gap:  60px; 
+            justify-content: center;
+           }
 
         @include desc(1200px) {
-            flex-direction: row;
+            gap: 0px;
             justify-content: space-around;
         }
     }
@@ -138,9 +142,10 @@
                 }
             }
            .help-wrap{
-            @include tab(768) {
+            @include tab(768px) {
              display: flex;  
              flex-direction: row; 
+             
             }
            }
            

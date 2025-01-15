@@ -31,6 +31,39 @@
                 <use href="./symbol-defs.svg#mobile"></use>
             </svg> +38 096 111 11 11</a></li>
         </ul>
+
+        <button class="mobile-open-btn">
+            <svg width="40"  height="40">
+                <use href="./symbol-defs.svg#icon-menu-btn"></use>
+            </svg>
+        </button>
+
+    </div>
+    </div>
+    <div class="mobile-menu-wrap is-hidden">
+    <div>
+    <button class="mobile-close-btn">
+   <svg width="40" height="40">  
+    <use href="./symbol-defs.svg#icon-closee"></use>   
+   </svg>
+    </button>
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item"><a class="mobile-nav-link" href="">Студія</a></li>
+            <li class="mobile-nav-item"><a class="mobile-nav-link"href="">Портфоліо</a></li>
+            <li class="mobile-nav-item"><a class="mobile-nav-link"href="">Контакти</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul class="mobile-post-list">
+        <li mobile-phone-item><a class="mobile-phone-link mobile-link" href="">+38 096 111 11 11</a></li>
+        <li mobile-mail-item><a class="mobile-mail-link mobile-link" href="">info@devstudio.com</a></li>
+    </ul>
+        <ul class="mobile-contacts-list">
+            <li class="contacts-item"><a class="contacts-link" href="">Instagram</a></li>
+            <li class="contacts-item"><a class="contacts-link" href="">Twitter</a></li>
+            <li class="contacts-item"><a class="contacts-link" href="">Facebook</a></li>
+            <li class="contacts-item"><a class="contacts-link" href="">LinkedIn</a></li>
+        </ul>
     </div>
     </div>
     </header>
@@ -88,7 +121,32 @@
             </h3>   
             <ul class="team-list">
                 <li class="team-list-item">
-                    <img class="team-list-img" src="images\img (3).jpg" alt="">
+                    <picture>
+                        <!-- <source media="(min-width:1199px)"
+                        srcset="./images/team-list-imgfirst.webp 1x, ./images/2x-desc-team-first.webp 2x,"
+                        type="image/webp"
+                        /> -->
+                        <source media="(min-width:1199px)"
+                        srcset="./igor/igor-desk-1x.jpg 1x , ./igor/igor-desk-2x.jpg 2x"
+                        type="image/jpeg"/>
+                        <!-- <source media="(min-width:767px)"
+                        srcset="./images/tab-team-first.webp 1x, ./images/2x-tab-team-first.webp 2x"
+                        type="image/webp"
+                        /> -->
+                        <source media="(min-width:767px)"
+                        srcset="./igor/igor-tab-1x.jpg 1x , ./igor/igor-tab-2x.jpg 2x"
+                        type="image/jpeg"
+                        />
+                        <!-- <source media="(max-width:767px)"
+                        srcset="./images/mob-team-first.webp 1x, ./images/2x-mob-team-first.webp 2x"
+                        type="image/webp"
+                        /> -->
+                        <source media="(max-width:767px)"
+                        srcset="./igor/igor-mob-1x.jpg 1x , ./igor/igor-mob-2x.jpg 2x"
+                        type="image/jpeg"
+                        />
+                        <img src="./images/igor/igor-desk-1x.jpg" alt="">
+                    </picture>
                    <div class="team-list-kontent-wrap">
                     <h4 class="team-list-title">Ігор Дем'яненко</h4>
                     <p class="team-list-desc">Product Designer</p>
@@ -125,7 +183,33 @@
                    </div>
                 </li>
                 <li class="team-list-item">
-                    <img class="team-list-img" src="images\img (2).jpg" alt="">
+                    <picture>
+                        <!-- <source media="(min-width:1199px)"
+                        srcset="./images/team-list-imgfirst.webp 1x, ./images/2x-desc-team-first.webp 2x,"
+                        type="image/webp"
+                        /> -->
+                        <source media="(min-width:1199px)"
+                        srcset="./images/olga/olga-desk-1x.jpg 1x , ./images/olga/olga-desk-2x.jpg 2x"
+                        type="image/jpeg"
+                        />
+                        <!-- <source media="(min-width:767px)"
+                        srcset="./images/tab-team-first.webp 1x, ./images/2x-tab-team-first.webp 2x"
+                        type="image/webp"
+                        /> -->
+                        <source media="(min-width:767px)"
+                        srcset="./images/olga/olga-tab-1x.jpg 1x , ./images/olga/olga-tab-2x.jpg 2x"
+                        type="image/jpeg"
+                        />
+                        <!-- <source media="(max-width:767px)"
+                        srcset="./images/mob-team-first.webp 1x, ./images/2x-mob-team-first.webp 2x"
+                        type="image/webp"
+                        /> -->
+                        <source media="(max-width:767px)"
+                        srcset="./images/olga/olga-mob-1x.jpg 1x , ./images/olga/olga-mob-2x.jpg 2x"
+                        type="image/jpeg"
+                        />
+                        <img src="./images/olga/olga-desk-1x.jpg" alt="">
+                    </picture>
                     <div class="team-list-kontent-wrap">
                         <h4 class="team-list-title">Ольга Рєпіна</h4>
                         <p class="team-list-desc">Frontend Developer</p>
@@ -287,11 +371,11 @@
             </div>
         </section>
     </main>
+
     <footer class="footer">
-        <div class="container">
+        <div class="container footer-container">
             <div class="footer-content-wrap">
-        <div class="help-wrap">
-        <div class="help">
+        <div>
         <a class="logo" href="">Web<span class="footer-logo">Studio</span></a>
         <address class="address">
             <ul class="footer-list">
@@ -334,26 +418,29 @@
             </li>
         </ul>
     </div>
-</div>
-<div class="addmail-wrap">
-<p class="addmail-text">Підпишіться на розсилку</p>
-<div class="addmail-wrap-two">
-<form  class="addmail-form" action=""><input class="addmail-input" placeholder="E-mail" type="text">
-<button class="addmail-btn">
+    <div class="addmail-wrap">
+    <p class="addmail-text">Підпишіться на розсилку</p>
+    <div class="addmail-wrap-two">
+    <form  class="addmail-form" action=""><input class="addmail-input" placeholder="E-mail" type="text">
+    <button class="addmail-btn">
     Підписатися
     <svg class="addmail-svg" width="24" height="24">
         <use href="./symbol-defs.svg#icon-send"></use>
-        </svg>
-</button>
-</form>
-</div>
-</div>
-
-
-</div>
-</div>
+    </svg>
+    </button>
+    </form>
+    </div>
+    </div>
+    
+    
+    </div>
+    </div>
     
     </footer>
+
+
+
+
     <div class="backdrop is-hidden" data-modal>
 
 		<div class="modal">
@@ -366,31 +453,31 @@
     <div class="label-wrap" > 
          
         <label class="label-name" for="">  
-        Ім'я 
+            <span class="label-text">Ім'я</span>
         <span class="icons-span"> 
             <input class="input-name"  type="text">
-        <svg class="icons-svg" width="20" height="20">
+        <svg class="icons-svg-one" width="20" height="20">
             <use href="./symbol-defs.svg#icon-person"></use></svg>
     </span>
 </label>
 </div>
     <div class="label-wrap">    
-        <label class="label-phone" for="">  Телефон 
+        <label class="label-phone" for="">  <span class="label-text"> Телефон </span>
         <span class="icons-span "> 
             <input class="input-mail" type="text">
-            <svg class="icons-svg" width="20" height="20">
+            <svg class="icons-svg-two" width="20" height="20">
                 <use href="./symbol-defs.svg#icon-phone"></use></svg>
                 </span></label>
             </div>
             <div class="label-wrap">
-            <label class="label-mail" for="">  Пошта 
+                <label class="label-mail" for="">  <span class="label-text" > Пошта </span>
         <span class="icons-span">
             <input class="input-phone" type="text">
-            <svg class="icons-svg" width="20" height="20">
+            <svg class="icons-svg-three" width="20" height="20">
                 <use href="./symbol-defs.svg#icon-mailo"></use></svg>
         </span></label>
     </div>
-    <label class="label-comment" for="">  Коментар <textarea class="textarea-comment" name="" id="" cols="30" rows="10"></textarea></label>
+    <label class="label-comment label-text" for="">  Коментар <textarea class="textarea-comment" name="" id="" cols="30" rows="10"></textarea></label>
     <div class="acses-wrap">
     <input class="input-checkbox" type="checkbox">
     <span class="acses">Погоджуюся з розсилкою та приймаю  <a class="acses-link" href="">Умови договору</a></span>
@@ -404,7 +491,8 @@
 <script src="./script.js">
 </script>
 <script src="./fixed-header.js">
-
+</script>
+<script src="./menu.js">
 </script>
 </body>
 </html>

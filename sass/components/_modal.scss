@@ -85,14 +85,10 @@
             width: 200px;
             height: 50px;
             color: rgba(255, 255, 255, 1);
+            margin-top: 30px;
         }
         .icons-span{
             position: relative;
-            }
-            .icons-svg{
-                position: absolute;
-                bottom: 2px;
-                left: 10px;
             }
             .modal-btn{
                 position: absolute;
@@ -110,4 +106,22 @@
             .label-wrap{
                 margin-bottom: 10px;
             }
-            
+            .icons-svg-one{
+                position: absolute;
+                bottom: 13px;
+                left: 10px;
+            }  
+                .icons-svg-two{
+                    position: absolute;
+                    bottom: 1px;
+                    left: 10px;
+                }
+                .icons-svg-three{
+                    position: absolute;
+                    bottom: 4px;
+                    left: 10px;
+                }
+                .label-text{
+                    margin-bottom: 4px;
+                    display: block;
+                }
